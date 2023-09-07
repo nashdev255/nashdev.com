@@ -16,9 +16,9 @@ const TypingText = ({ text }: { text: string }) => {
 
     return (
         <>
-            <motion.p variants={ variants } initial="hidden" animate="visible">
+            <motion.div variants={ variants } initial="hidden" animate="visible">
                 { text }
-            </motion.p>
+            </motion.div>
         </>
     )
 }
