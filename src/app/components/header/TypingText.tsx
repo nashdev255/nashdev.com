@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import clsx from 'clsx'
 import { motion } from 'framer-motion'
 
 type TypingText = {
@@ -23,7 +24,7 @@ const TypingText = ({ text, textStyles }: TypingText) => {
         <>
             <motion.p
             variants={ TypingTextVariants } initial="hidden" animate="visible"
-            className={`${ textStyles }`}
+            className={ clsx("text-red-200", textStyles) }
             >
                 { text }
             </motion.p>
