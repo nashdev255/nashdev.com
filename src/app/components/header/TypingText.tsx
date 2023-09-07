@@ -3,7 +3,12 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-const TypingText = ({ text }: { text: string }) => {
+type TypingText = {
+    text: string;
+    className: string;
+};
+
+const TypingText = ({ text, className }: TypingText) => {
 
     const variants = {
         hidden: {
@@ -16,9 +21,12 @@ const TypingText = ({ text }: { text: string }) => {
 
     return (
         <>
-            <motion.div variants={ variants } initial="hidden" animate="visible">
+            <motion.p
+            variants={ variants } initial="hidden" animate="visible"
+            className={`${ className }`}
+            >
                 { text }
-            </motion.div>
+            </motion.p>
         </>
     )
 }
