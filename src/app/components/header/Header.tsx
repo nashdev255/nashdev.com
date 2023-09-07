@@ -1,10 +1,10 @@
-import AnimatedText from "./AnimatedText";
+import TypingText from "./TypingText";
 
 const Header = () => {
     return (
         <>
             <header>
-                <AnimatedText text="Hello, World"/>
+                <TypingText text="Hello, World"/>
             </header>
         </>
     )
