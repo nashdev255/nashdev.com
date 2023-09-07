@@ -5,25 +5,25 @@ import { motion } from 'framer-motion'
 
 type TypingText = {
     text: string;
-    className: string;
+    textStyles: string;
 };
 
-const TypingText = ({ text, className }: TypingText) => {
+const TypingText = ({ text, textStyles }: TypingText) => {
 
-    const variants = {
+    const TypingTextVariants = {
         hidden: {
-            opacity: 0
+            opacity: 0,
         },
         visible: {
-            opacity: 1
-        }
+            opacity: 1,
+        },
     };
 
     return (
         <>
             <motion.p
-            variants={ variants } initial="hidden" animate="visible"
-            className={`${ className }`}
+            variants={ TypingTextVariants } initial="hidden" animate="visible"
+            className={`${ textStyles }`}
             >
                 { text }
             </motion.p>
