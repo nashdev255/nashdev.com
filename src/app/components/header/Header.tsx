@@ -1,13 +1,9 @@
-import TypingText from "./TypingText";
+import React from 'react'
 
 const Header = () => {
     return (
         <>
             <header>
-                <TypingText
-                text="Hello, World"
-                textStyles="text-center text-[2.5rem]"
-                />
             </header>
         </>
     )

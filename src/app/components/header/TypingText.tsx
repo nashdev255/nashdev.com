@@ -17,6 +17,9 @@ const TypingText = ({ text, textStyles }: TypingText) => {
         },
         visible: {
             opacity: 1,
+            transition: {
+                duration: 2,
+            },
         },
     };
 
@@ -24,7 +27,7 @@ const TypingText = ({ text, textStyles }: TypingText) => {
         <>
             <motion.p
             variants={ TypingTextVariants } initial="hidden" animate="visible"
-            className={ clsx("text-red-200", textStyles) }
+            className={ clsx(textStyles) }
             >
                 { text }
             </motion.p>
