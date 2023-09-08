@@ -44,7 +44,7 @@
      id="defs14" />
   <g
      id="g8"
-     fill="url('#myGradient')"
+     <!-- fill="url('#myGradient')" -->
      word-spacing="0"
      letter-spacing="0"
      font-family="OTADESIGN Rounded"
